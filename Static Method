@@ -1,0 +1,10 @@
+class Student:
+    def __init__(self, name, roll_no, age):
+        self.name = name
+        self.roll_no = roll_no
+        self.age = age
+    @staticmethod # static method works as class level 
+    def hello():
+        print("Hello, I am a student")
+s1 = Student("John", 101, 18)
+s1.hello() # calling static method using instance of class
