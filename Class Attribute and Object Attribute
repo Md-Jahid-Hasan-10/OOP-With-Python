@@ -1,0 +1,16 @@
+class Student:
+    College_name = "XYZ" #class attribute
+    def __init__(self, name, roll_no, marks):
+        self.name = name #object attribute
+        self.roll_no = roll_no #object attribute
+        self.marks = marks #object attribute
+Student1 = Student("John", 101, 85)
+print(Student1.name)
+print(Student1.roll_no)
+print(Student1.marks)
+Student2 = Student("Mary", 102, 90)
+print(Student2.name)
+print(Student2.roll_no)
+print(Student2.marks)
+print(Student1.College_name) #accessing class attribute using object
+print(Student.College_name) #accessing class attribute using class name
