@@ -1,0 +1,9 @@
+class Student:
+    __name = "Anonymus"
+    def __hello(self):
+        print("Hello, my name is", self.__name)
+    def welcome(self):
+        self.__hello()
+
+s = Student()
+s.welcome()
