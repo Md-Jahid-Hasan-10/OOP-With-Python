@@ -1,0 +1,9 @@
+class Student:
+    def __init__(self, name, roll_no, marks):#constructor
+        self.name = name #object attribute
+        self.roll_no = roll_no #object attribute
+        self.marks = marks #object attribute
+    def greatings(self):#method
+        print("Welcome", self.name)
+Student1 = Student("John", 101, 85)
+Student1.greatings()
