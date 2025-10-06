@@ -1,0 +1,14 @@
+#Abstraction means hiding the implementation details and showing only the necessary information to the user.
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+    def check_balance(self):
+        return self.balance
+ac = BankAccount(1234, 5000)
+ac.deposit(1000)
+print(ac.check_balance())
+#user can deposit and check balance of the account without knowing the implementation details.
