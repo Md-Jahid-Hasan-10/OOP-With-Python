@@ -1,0 +1,18 @@
+#inheritence is used for creating a new class from an existing class.
+class Car:
+    @staticmethod
+    def start():
+        print("Car started...")
+    @staticmethod
+    def stop():
+        print("Car stopped...")
+class BMW(Car):
+    def __init__(self, model,color):
+        self.model = model
+        self.color = color
+
+car = BMW("X5", "Red")
+print(car.model)
+print(car.color)
+car.start()
+car.stop()
