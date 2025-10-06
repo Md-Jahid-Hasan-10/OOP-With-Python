@@ -1,0 +1,22 @@
+#Encapsulation is used to hide the implementation details of a class from the outside world.
+class Account:
+    def __init__(self, name, balance):
+        self.__name = name
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+        print("Deposit successful. New balance is:", self.get_balance())
+    def withdraw(self, amount):
+        if self.__balance < amount:
+            print("Insufficient balance")
+        else:
+            self.__balance -= amount
+            print("Withdrawal successful. New balance is:",self.get_balance())
+    def get_balance(self):
+        return self.__balance
+
+ac = Account("John", 5000)
+ac.deposit(2000)
+ac.withdraw(1000)
+ac.withdraw(6000)
